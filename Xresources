@@ -1,0 +1,184 @@
+!---------------------------
+!--      .Xresources      --
+!--      by lgaggini      --
+!--      CC BY-SA 3.0     --
+!---------------------------
+
+! Xft settings ---------------------------------------------------------
+Xft.autohint:   0
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
+
+! terminal colors ------------------------------------------------------
+!*foreground:  #BCBCBC
+!*foreground:  #00ff00
+!*background:  #1C1C1C
+
+! urxvt settings--------------------------------------------------------
+!
+! general
+!
+! lines in the scrollback buffer
+URxvt*saveLines:            10000
+! window geometry
+URxvt*geometry:             128x64
+! start as login shell
+URxvt*loginShell:           false
+! name of terminal type
+! URxvt*termName:           Urxvt
+! window title
+! URxvt*title:              Urxvt
+! window icon
+! URxvt*iconName:           string
+! store tabs as wide characters
+URxvt*pastableTabs:         true
+
+!
+! scroll
+!
+! jump scrolling
+URxvt*jumpScroll:           true
+! skip scrolling
+URxvt*skipScroll:           false
+! scroll to bottom on output
+URxvt*scrollTtyOutput:      true
+! scroll to bottom when a non-special key is pressed
+URxvt*scrollTtyKeypress:    false
+! scroll to bottom when tty receives new lines
+URxvt*scrollWithBuffer:     false
+! scroll page by page
+URxvt*mouseWheelScrollPage: false
+
+!
+! effects
+!
+! enable transparency
+URxvt*transparent:          true
+! percentage of shading
+URxvt*.shading:             100
+! shading color
+URxvt*tintColor:            #1C1C1C
+! percentage of fading on unfocused
+!URxvt*fading:              0
+! fading color
+!URxvt*fadeColor:           color
+! use font glyphs
+URxvt*skipBuiltinGlyphs:    true
+! number of lines between row
+URxvt*lineSpace:            0
+! space between letters
+URxvt*letterSpace:          -1
+! cursor underline
+URxvt*cursorUnderline:      false
+! cursor blinking
+URxvt*cursorBlink:          false
+! blank the pointer on keypress or timeout
+URxvt*pointerBlank:         false
+! reverve bf and fg colors
+URxvt*reverseVideo:         false
+
+!
+! misc
+!
+! enable urgency init
+URxvt*urgentOnBell:       true
+! triple click select only logical line
+URxvt*tripleclickwords:   true
+! insecure mode
+URxvt*insecure:           false
+! maintain window after program execution
+URxvt*hold:               false
+! delimiters for double-click selection
+URxvt*cutchars:           BACKSLASH '"'&()*,;<=>?@[]^{|}
+
+!
+! borders
+!
+! pixels for external border
+URxvt*externalBorder:     0
+! pixels for internal border
+URxvt*internalBorder:     2
+! remove border
+URxvt*borderLess:         false
+
+!
+! fonts
+!
+! xft fonts
+! URxvt*font: xft:Hack Nerd Font Mono:size=11
+URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=16.5
+URxvt*boldFont: xft:Bitstream Vera Sans Mono:pixelsize=16.5
+!
+! scrollbar
+!
+! enable scrollbar
+URxvt*scrollBar:          true
+! scrollbar width
+URxvt*thickness:          5
+! scrollbar color
+URxvt*scrollColor:        #1E1E1E
+! scrollbar trough area color
+!URxvt*troughColor:        #333333
+! scrollbar without a trough
+!URxvt*scrollBar_floating: false
+! scrollbar to the right
+URxvt*scrollBar_right:    true
+! scrollbar style
+URxvt*scrollstyle:        plain
+
+!
+! extension
+!
+! matcher for clickable urls and vtwheel for scroll in man, less, etc.
+URxvt.perl-ext-common:  default,matcher,vtwheel,resize-font
+URxvt.url-launcher:     /usr/bin/firefox
+URxvt.matcher.button:   1
+URxvt.keysym.Control-minus:   resize-font:smaller
+URxvt.keysym.Control-plus:    resize-font:bigger
+URxvt.keysym.Control-equal:   resize-font:reset
+URxvt.scrollBar: false
+
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!URxvt*background: [90]#151515
+!URxvt*foreground:   #7c00ff
+URxvt*foreground:    #80024a
+URxvt*background: #151515
+!black
+URxvt*color0: #101010
+URxvt*color8: #404040
+!red
+URxvt*color1: #953331
+URxvt*color9: #8D4A48
+!green
+URxvt*color2:   #0ead59
+URxvt*color10:   #0ead59
+!yellow
+URxvt*color3:  #9b0a7c
+!vim if
+URxvt*color11:     #ffcf00
+!blue
+URxvt*color4:  #17ff00
+URxvt*color12:   #d00026
+!magenta
+!vim include
+URxvt*color5:    #00ffee
+!vim string and autocomp
+!URxvt*color13:    #ff0000
+!URxvt*color13:    #521ab5
+URxvt*color13:    #323d54
+!cyan
+URxvt*color6:   #ffc709
+!vim comment
+URxvt*color14:     #ffe200
+!white
+URxvt*color7: #dddddd
+URxvt*color15: #dddddd
